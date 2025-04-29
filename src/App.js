@@ -1,6 +1,7 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
-import Frase from './components/Pessoa';
+import Frase from './components/Frase';
 import Pessoa from './components/Pessoa';
 
 function App() {
@@ -9,6 +10,10 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Olá React</h1>
+      <Frase/>
+      <Frase/>
+
       <SayMyName nome="Martin"/>
       <SayMyName nome="Marcos"/>
       <SayMyName nome={nome}/>
